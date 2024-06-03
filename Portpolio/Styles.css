@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #c90505;
+    background-color: #000000;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+header {
+    background: #fffffff6;
+    color: #0003aa;
+    text-align: left;
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ee008b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin: 0 2rem;
+}
+
+.header-content p {
+    color:rgb(255, 22, 22);
+    margin: 0 2rem ;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+}
+
+#about h2 {
+    color: #03fc24;
+    text-align: center;
+    margin-bottom: 0.5;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-content img {
+    max-width: 175px;
+    margin-top: auto;
+    margin-right: 1rem;
+}
+
+.about-content p {
+    max-width: 600px;
+    margin: 0;
+    font-size: 17px;
+    color: #0003aa;
+    
+}
+
+.about-content .button {
+    display: inline-block;
+    padding: 1rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.about-content .button:hover {
+    background: #0056b3;
+}
+
+/* Skills Section */
+#skills {
+    background: #f8f8f8;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+#skills h2 {
+    color: #03fc24;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.skill-item {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgb(14, 11, 233);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgb(236, 5, 5);
+}
+
+/* Projects Section */
+#projects {
+    background: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+}
+
+#projects h2 {
+    color: #03fc24;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#projects h3 {
+    color: #03fc24;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-item {
+    background: #f8f8f8;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgb(14, 11, 233);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    display: block;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgb(236, 5, 5);
+}
+
+.project-item h3, .project-item p {
+    padding: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(89, 243, 0, 0.1);
+    margin-top: 0.5rem;
+}
+#contact h2 {
+    color: #03fc24;
+    font-size: 2rem;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+footer p {
+    margin: 0;
+}
